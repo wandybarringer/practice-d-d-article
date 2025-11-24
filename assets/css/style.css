@@ -57,12 +57,10 @@ section {
   }
 }
 
-a {
-  text-decoration: none;
-}
-
+a,
 a:visited {
   color: var(--secondary-text-color);
+  text-decoration: none;
 }
 
 h1 {
