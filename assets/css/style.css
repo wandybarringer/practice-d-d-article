@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg-color: #cfc8bc;
+  --secondary-bg-color: #a34c50;
+  --primary-text-color: #264c5e;
+  --secondary-text-color: #4a2932;
+  --link-text-color: #e8443c;
+  --link-text-hover-color: #e94445;
+  --border-color: #472931;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+section {
+  margin-block: 50px;
+}
+
+.primary-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.primary-nav ul li {
+  font-size: 2rem;
+  color: var(--secondary-text-color);
+}
+
+.wrapper {
+  max-inline-size: 1000px;
+  margin-inline: auto;
+}
+
+.two-column-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-block: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--secondary-text-color);
+}
+
+h1 {
+  font-size: 6rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p,
+li {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.dragon-bg {
+  position: relative;
+  background: rgba(0, 0, 0, 0.48);
+  color: var(--primary-bg-color);
+}
+
+.dragon-bg::before {
+  content: '';
+  background-image: url(../images/ttrpg-beholder-and-adventurer.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.5;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.dragon-bg h3 {
+  text-align: center;
+}
+
+.larger-p-font {
+  font-size: 1.5rem;
+}
+
+img {
+  max-inline-size: 100%;
+  display: block;
+}
+
+.resize-logo {
+  inline-size: 150px;
+}
+
+.red-bg {
+  text-align: center;
+  background: var(--secondary-bg-color);
+  color: var(--primary-bg-color);
+  padding: 20px;
+  border: 5px solid var(--border-color);
+}
+
+footer {
+  text-align: center;
+  background: var(--secondary-bg-color);
+  color: var(--primary-bg-color);
+  padding: 20px;
+  border: 5px solid var(--border-color);
+}
